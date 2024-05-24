@@ -1,23 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react'
+import Input from './components/Input';
+import Calender from './components/Calender';
+import ListBox from './components/ListBox';
 
-function BadCounter() {
-  const [items, setItems] = useState([1, 2, 3]);
-
-  const addItem = () => {
-    // items.push(items.length + 1); // 배열에 직접 push, 불변성 위반
-    setItems([...items, items.length + 1]);
-  };
-
+export const App = () => {
   return (
     <div>
-      <button onClick={addItem}>Add Item</button>
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <h1>🍔 Bank Burger</h1>
+      <Input />
+      <Calender />
+      <ListBox />
     </div>
-  );
+  )
 }
 
-export default BadCounter;
+export default App;
