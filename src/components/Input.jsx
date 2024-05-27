@@ -1,30 +1,49 @@
 import React from 'react';
-import Stbox from '../App.jsx';
+import {Stbox} from '../components/common';
+import styled from "styled-components";
+
+const FormDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const InputDiv = styled.div`
+  display: flex;
+  padding-right: 35px;
+`;
+
+const InputP = styled.p`
+  padding-right: 8px;
+  font-weight: 600;
+`;
 
 const Input = () => {
   return (
     <Stbox>
-      <div className='date'>
-        <p>날짜</p>
-        <input type='date' />
-      </div>
+      <FormDiv>
+        <InputDiv>
+          <InputP>날짜</InputP>
+          <input type='date' />
+        </InputDiv>
 
-      <div className='items'>
-        <p>항목</p>
-        <input type="text" placeholder='지출 항목' />
-      </div>
+        <InputDiv>
+          <InputP>항목</InputP>
+          <input type="text" placeholder='지출 항목' />
+        </InputDiv>
 
-      <div className='amount'>
-        <p>금액</p>
-        <input type='number' placeholder='지출 금액' />
-      </div>
+        <InputDiv>
+          <InputP>금액</InputP>
+          <input type='number' placeholder='지출 금액' />
+        </InputDiv>
 
-      <div className='contents'>
-        <p>내용</p>
-        <input type="text" placeholder='지출 내용' />
-      </div>
+        <InputDiv>
+          <InputP>내용</InputP>
+          <input type="text" placeholder='지출 내용' />
+        </InputDiv>
 
-      <button type='submit' className='saveBtn'>저장</button>
+        <button type='submit'>저장</button>
+      </FormDiv>
     </Stbox>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Lists from './Lists';
-import Stbox from '../App';
+import {Stbox} from '../components/common';
+import styled from "styled-components";
 
 function ListBox() {
   return (

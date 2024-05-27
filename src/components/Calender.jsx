@@ -1,6 +1,7 @@
 import React from 'react';
 import Month from './Month';
-import Stbox from '../App';
+import {Stbox} from '../components/common';
+import styled from "styled-components";
 
 export const Calender = () => {
   return (
