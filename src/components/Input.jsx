@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Stbox from '../App.jsx';
 
 const Input = () => {
   return (
-    <div>
+    <Stbox>
       <div className='date'>
         <p>날짜</p>
         <input type='date' />
@@ -24,7 +25,7 @@ const Input = () => {
       </div>
 
       <button type='submit' className='saveBtn'>저장</button>
-    </div>
+    </Stbox>
   )
 }
 

@@ -1,11 +1,12 @@
 import React from 'react'
 import Lists from './Lists';
+import Stbox from '../App';
 
 function ListBox() {
   return (
-    <div>
+    <Stbox>
         <Lists />
-    </div>
+    </Stbox>
   )
 }
 

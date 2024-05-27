@@ -1,0 +1,32 @@
+body{
+    background-color: #ffc46a;
+}
+
+.title{
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 40px;
+}
+
+.div-List{
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.month-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.month-btn {
+    width: 100px;
+    height: 50px;
+    background-color: #ececec;
+    border: 0;
+    border-radius: 10px;
+}

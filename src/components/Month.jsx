@@ -1,21 +1,22 @@
 import React from 'react'
+import Stbox from '../App';
 
 function Month() {
   return (
-    <div>
-        <button>1월</button>
-        <button>2월</button>
-        <button>3월</button>
-        <button>4월</button>
-        <button>5월</button>
-        <button>6월</button>
-        <button>7월</button>
-        <button>8월</button>
-        <button>9월</button>
-        <button>10월</button>
-        <button>11월</button>
-        <button>12월</button>
-    </div>
+    <Stbox>
+        <button className='month-btn'>1월</button>
+        <button className='month-btn'>2월</button>
+        <button className='month-btn'>3월</button>
+        <button className='month-btn'>4월</button>
+        <button className='month-btn'>5월</button>
+        <button className='month-btn'>6월</button>
+        <button className='month-btn'>7월</button>
+        <button className='month-btn'>8월</button>
+        <button className='month-btn'>9월</button>
+        <button className='month-btn'>10월</button>
+        <button className='month-btn'>11월</button>
+        <button className='month-btn'>12월</button>
+    </Stbox>
   )
 }
 
