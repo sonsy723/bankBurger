@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Stbox} from '../components/common';
 import styled from "styled-components";
 
@@ -28,16 +28,20 @@ const MonthList = styled.div`
   border-radius: 20px;
 `;
 
-function Month() {
-  
+function Month({selectedMonth, setSelectedMonth}) {
+
 
   return (
     <MonthList>
-        <Monthbtn>1월</Monthbtn>
+        <Monthbtn onClick={() => {
+          setSelectedMonth(1)
+        }}>1월</Monthbtn>
         <Monthbtn>2월</Monthbtn>
         <Monthbtn>3월</Monthbtn>
         <Monthbtn>4월</Monthbtn>
-        <Monthbtn>5월</Monthbtn>
+        <Monthbtn onClick={() => {
+          setSelectedMonth(5)
+        }}>5월</Monthbtn>
         <Monthbtn>6월</Monthbtn>
         <Monthbtn>7월</Monthbtn>
         <Monthbtn>8월</Monthbtn>

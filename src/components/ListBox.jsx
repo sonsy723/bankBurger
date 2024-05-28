@@ -3,10 +3,10 @@ import Lists from './Lists';
 import {Stbox} from '../components/common';
 import styled from "styled-components";
 
-function ListBox() {
+function ListBox({expenses}) {
   return (
     <Stbox>
-        <Lists />
+        <Lists expenses={expenses}/>
     </Stbox>
   )
 }

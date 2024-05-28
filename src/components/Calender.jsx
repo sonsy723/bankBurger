@@ -3,10 +3,10 @@ import Month from './Month';
 import {Stbox} from '../components/common';
 import styled from "styled-components";
 
-export const Calender = () => {
+export const Calender = ({selectedMonth, setSelectedMonth}) => {
   return (
     <Stbox>
-        <Month />
+        <Month selectedMonth={selectedMonth} setSelectedMonth={setSelectedMonth}/>
     </Stbox>
   )
 }

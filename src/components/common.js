@@ -11,3 +11,8 @@ export const Stbox = styled.div`
   border-radius: 20px;
 `;
 
+export const Stbody = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffdca7;
+`;
