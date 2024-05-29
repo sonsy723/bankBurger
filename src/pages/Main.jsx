@@ -3,7 +3,7 @@ import Input from '../components/Input.jsx';
 import Calender from "../components/Calender.jsx";
 import ListBox from "../components/ListBox.jsx";
 import styled from "styled-components";
-import {Stbody, Stbox} from '../components/common';
+import { Stbody, Stbox } from '../components/common';
 import { useLocation, useNavigate } from "react-router-dom";
 
 // 스타일
@@ -25,7 +25,7 @@ const Main = ({selectedMonth, setSelectedMonth, expenses, setExpenses}) => {
       <Input expenses={expenses} setExpenses={setExpenses} />
       <Calender selectedMonth={selectedMonth} setSelectedMonth={setSelectedMonth} />
       <ListBox expenses={expenses.filter((expense) => {
-        if(expense.date === '2024-05-29') {
+        if(expense.date === `2024-${selectedMonth}-${expense.date.substr(8, 9)}`) {
           return expense
         }
       })} />

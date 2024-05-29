@@ -10,6 +10,10 @@ const Monthbtn = styled.button`
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
+
+  &:hover {
+    background-color: orange;
+  }
   `;
 
 const MonthList = styled.div`
@@ -33,22 +37,18 @@ function Month({selectedMonth, setSelectedMonth}) {
 
   return (
     <MonthList>
-        <Monthbtn onClick={() => {
-          setSelectedMonth(1)
-        }}>1월</Monthbtn>
-        <Monthbtn>2월</Monthbtn>
-        <Monthbtn>3월</Monthbtn>
-        <Monthbtn>4월</Monthbtn>
-        <Monthbtn onClick={() => {
-          setSelectedMonth(5)
-        }}>5월</Monthbtn>
-        <Monthbtn>6월</Monthbtn>
-        <Monthbtn>7월</Monthbtn>
-        <Monthbtn>8월</Monthbtn>
-        <Monthbtn>9월</Monthbtn>
-        <Monthbtn>10월</Monthbtn>
-        <Monthbtn>11월</Monthbtn>
-        <Monthbtn>12월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('01')}}>1월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('02')}}>2월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('03')}}>3월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('04')}}>4월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('05')}}>5월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('06')}}>6월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('07')}}>7월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('08')}}>8월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('09')}}>9월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('10')}}>10월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('11')}}>11월</Monthbtn>
+        <Monthbtn onClick={() => {setSelectedMonth('12')}}>12월</Monthbtn>
     </MonthList>
   )
 }
