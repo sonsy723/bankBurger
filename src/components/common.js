@@ -16,3 +16,11 @@ export const Stbody = styled.div`
   height: 100vh;
   background-color: #ffdca7;
 `;
+
+export const StTitle = styled.h1`
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 40px;
+  font-weight: 800;
+  cursor: pointer;
+`;

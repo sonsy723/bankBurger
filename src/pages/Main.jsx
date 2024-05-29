@@ -3,16 +3,9 @@ import Input from '../components/Input.jsx';
 import Calender from "../components/Calender.jsx";
 import ListBox from "../components/ListBox.jsx";
 import styled from "styled-components";
-import { Stbody, Stbox } from '../components/common';
+import { Stbody, Stbox, StTitle } from '../components/common';
 import { useLocation, useNavigate } from "react-router-dom";
 
-// 스타일
-const StTitle = styled.h1`
-  text-align: center;
-  padding: 40px 0px;
-  font-size: 40px;
-  font-weight: 800;
-`;
 
 const Main = ({selectedMonth, setSelectedMonth, expenses, setExpenses}) => {
   const navigate = useNavigate();
